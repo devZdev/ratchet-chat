@@ -1,4 +1,9 @@
 <?php
+use Ratchet\Server\IoServer;
+use Ratchet\Http\HttpServer;
+use Ratchet\WebSocket\WsServer;
+use MyApp\Chat;
+
 $app = new \Ratchet\Http\HttpServer(
     new \Ratchet\WebSocket\WsServer(
         new \MyApp\Chat()
